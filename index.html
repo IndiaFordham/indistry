@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indistry</title>
+<script>
+(function(){
+  var w = Math.min(window.innerWidth || 9999, (window.screen && screen.width) || 9999);
+  var phone = w <= 820 || /iPhone|iPod|Android.*Mobile|Mobile Safari/i.test(navigator.userAgent);
+  location.replace((phone ? 'mobile.html' : 'desktop.html') + location.hash);
+})();
+</script>
+<style>body{margin:0;background:#5A2A27}</style>
+</head>
+<body>
+<noscript><a href="desktop.html">Continue to Indistry</a></noscript>
+</body>
+</html>
